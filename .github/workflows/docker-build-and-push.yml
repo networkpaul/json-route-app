@@ -20,14 +20,11 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: ${{ secrets.GITHUB_ACTOR }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Build and push Docker image
         run: |
-          # Set the environment for production
-          export FLASK_ENV=production
-
           # Build the Docker image using docker-compose.prod.yml
           docker-compose -f docker-compose.prod.yml build
 
