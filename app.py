@@ -74,10 +74,12 @@ def post_json():
         # Save data to a JSON file
         save_data(key_with_timestamp, parsed_json)
 
-        return jsonify({"message": f"JSON stored under key '{key_with_timestamp}'", "data": data_store}), 200
+        # Redirect to the home page after posting
+        return redirect(url_for('home'))
 
     except (json.JSONDecodeError, IndexError) as e:
         return jsonify({"error": "Invalid JSON"}), 400
+
 
 # Dynamic route to return JSON data
 @app.route('/<key>')
