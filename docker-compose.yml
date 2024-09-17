@@ -1,6 +1,7 @@
 services:
   flask-app:
     image: ghcr.io/networkpaul/json-route-app/flask-json-ui:latest
+    container_name: flask-json-ui
     ports:
       - "5000:5000"
     volumes:
