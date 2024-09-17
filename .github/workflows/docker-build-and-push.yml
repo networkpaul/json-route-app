@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t flask-json-ui:${{ env.TAG_NAME }} -f Dockerfile .
+          docker build --no-cache -t flask-json-ui:${{ env.TAG_NAME }} -f Dockerfile .
 
       - name: Tag and push Docker image
         run: |
