@@ -8,10 +8,10 @@ services:
       - "5000:5000"
     volumes:
       - .:/app
-      - routes:/app/routes
+      - routes_local:/app/routes
     environment:
       - FLASK_ENV=development
       - FLASK_APP=app.py
 
 volumes:
-  routes:
+  routes_local:
