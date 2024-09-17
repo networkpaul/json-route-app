@@ -39,7 +39,7 @@ Open your web browser and navigate to:
 http://your-domain-or-ip:5000
 ```
 
-> Note: Replace `your-domain-or-ip` with your actual domain or IP address. If you change the port, replace `5000` with the appropriate port number.
+> Note: Replace `your-domain-or-ip` with your actual domain or IP address. If you changed the port, replace `5000` with the appropriate port number.
 
 5. Enter valid JSON:
 
