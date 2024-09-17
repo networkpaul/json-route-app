@@ -29,7 +29,7 @@ This command will start the Flask application in detached mode.
 
 3. Point your domain to the server:
 
-Ensure your domain is pointed to the server where the Flask application is running, and the server is accessible on port 5000.
+Ensure your domain is pointed to the server where the Flask application is running, and the server is accessible on the port you specified in the `.env` file. By default, the application is running on port 5000.
 
 4. Access the application:
 
