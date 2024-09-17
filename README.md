@@ -39,9 +39,23 @@ Open your web browser and navigate to:
 http://your-domain-or-ip:5000
 ```
 
+> Note: Replace `your-domain-or-ip` with your actual domain or IP address. If you change the port, replace `5000` with the appropriate port number.
+
 5. Enter valid JSON:
 
 Once you access the application, you will be prompted to enter valid JSON data. Input your JSON and interact with the application as needed.
+
+## Local Development
+
+If you want to run the application locally, you can use Docker Compose to build and run the application in a container.
+
+1. Start the Application with Docker Compose:
+
+    ```bash
+   docker-compose -f docker-compose.local.yml up -d --build
+   ```
+   
+> Note: This command will build the Docker image and start the application in detached mode. The FLASK_PORT can still be changed in the .env file. By default, the application is running on port 5000.
 
 ## Example Usage
 
