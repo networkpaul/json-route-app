@@ -1,12 +1,18 @@
 FROM python:3.10-slim
 
-WORKDIR /app
+WORKDIR /code
 
-COPY requirements.txt .
+RUN useradd -m python
+
+USER python
+
+ENV PATH="/home/python/.local/bin:${PATH}"
+
+COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY --chown=python:python . .
 
 RUN mkdir -p routes
 
