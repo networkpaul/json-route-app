@@ -1,6 +1,10 @@
 # Flask JSON APP
 
-This repository provides a Flask application for interacting with JSON data through a web interface.
+Notice: This does not server a real purpose in my opinion. I wanted to learn how to use Flask and Docker and how to publish a docker image on Github Container Registry.
+
+Feel free to contribute to this project if you think this can be useful for someone else.
+
+> This repository provides a Flask application for interacting with JSON data through a web interface.
 
 ## Getting Started
 
