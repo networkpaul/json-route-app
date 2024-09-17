@@ -1,10 +1,8 @@
 FROM python:3.10-slim
 
-WORKDIR /code
+WORKDIR /app
 
 RUN useradd -m python
-
-USER python
 
 ENV PATH="/home/python/.local/bin:${PATH}"
 
@@ -14,7 +12,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY --chown=python:python . .
 
-RUN mkdir -p routes
+RUN mkdir -p /app/routes && chown -R python:python /app/routes
+
+USER python
 
 EXPOSE 5000
 
