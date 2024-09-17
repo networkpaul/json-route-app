@@ -1,4 +1,4 @@
-# Flask JSON UI
+# Flask JSON APP
 
 This repository provides a Flask application for interacting with JSON data through a web interface.
 
@@ -16,7 +16,7 @@ To get started, follow these steps:
 
    ```bash
    git clone https://github.com/networkpaul/json-route-app.git
-   cd json-route-app.git
+   cd json-route-app
    ```
 
 2. Start the Application with Docker Compose:
